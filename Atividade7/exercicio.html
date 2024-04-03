@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="exercicio.js" defer></script>
+    <link rel="stylesheet" href="exercicio.css">
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="userValue">
-    <input type="text" id="randomValue">
+    <div class="container">
+        <div class="containerForm">
+            
+        <button id="pedra"><img src="pedra.jpg"  alt=""></button>
+        <button id="papel"><img src="tesoura.jpg" alt=""></button>
+        <button id="tesoura"><img src="papel.jpg" alt=""></button>
 
-    <button id="pedra">Pedra</button>
-    <button id="papel">Papel</button>
-    <button id="tesoura">Tesoura</button>
-
-    <button id="iniciar">Iniciar</button>
+        <div id="userValue" class="Value"></div>
+        <div id="randomValue" class="Value"></div>
     
-    <div class="res"></div>
+        <button id="iniciar">Iniciar</button>
+
+        <div class="res"></div>
+        </div>
+        
+    </div>
+
+    
 </body>
 </html>

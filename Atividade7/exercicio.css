@@ -1,5 +1,70 @@
-#res {
-    background: blue;
-    width: 400px;
-    height: 400px;
+
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+* {
+    font-family: Workbench;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(45deg, black, rgb(34, 34, 34));
+}
+
+img {
+    width: 100px;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, black, rgb(34, 34, 34));
+    padding: 50px;
+    box-shadow: 0px 0px 15px 3px rgb(255, 255, 255, 0.45);
+    border-radius: 5px;
+}
+.containerForm{
+    
+    .Value{
+        width: 300px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background: white;
+        text-align: center;
+        border: 1px solid white;
+    }
+
+    .res {
+        width: 300px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background: white;
+        text-align: center;
+    }
+
+    button {
+        transition: 0.6s;
+        width: 300px;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background: linear-gradient(45deg, black, rgb(26, 26, 26));
+        color: white;
+
+        
+    }
+
+    button:hover {
+        transition: 0.6s;
+        background: linear-gradient(45deg, white, white);
+        color: black;
+    }
+    
+    
 }
