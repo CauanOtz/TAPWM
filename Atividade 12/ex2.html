@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificacao(p1,p2){
+
+            p1 = prompt("Digite a primeira palavra");
+            p2 = prompt("Digite a segunda palavra");
+
+            if(!p1 || !p2){
+                alert("erro");
+            }
+
+            if(p1.includes(p2)){
+                alert("é um subconjunto");
+            }else {
+                alert("não é subconjunto")
+            }
+        }
+
+        verificacao();
+    </script>
+</body>
+</html>

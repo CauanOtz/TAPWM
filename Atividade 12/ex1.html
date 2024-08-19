@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calc(nums){
+            const [a,b,c] = nums;
+
+            const soma = a + b + c;
+
+            const quadrado1 = a * a;
+            const quadrado2 = b * b;
+
+            return `A soma dos três números é: ${soma}, o quadrado do primeiro é: ${quadrado1}, o quadrado do segundo é: ${quadrado2}`;
+        }
+
+        function cVal(){
+            const num1 = parseFloat(prompt("Digite o primeiro número"));
+            const num2 = parseFloat(prompt("Digite o segundo número"));
+            const num3 = parseFloat(prompt("Digite o terceiro número"));
+
+            if(isNaN(num1) || isNaN(num2) || isNaN(num3)){
+                console.log("Por favor, insira valores válidos.");
+                return;
+            }
+
+            const resultado = calc.apply(null, [[num1,num2,num3]]);
+
+            alert(resultado);
+        }
+
+        cVal();
+    </script>
+</body>
+</html>
