@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área de Retângulo</title>
+</head>
+<body>
+    <input type="text" placeholder="Digite a base" class="base">
+    <input type="text" placeholder="Digite a altura" class="altura">
+    <button onclick="calcularArea()">Calcular Área</button>
+    <div class="resultado"></div>
+    <script>
+        
+        class Retangulo {
+            constructor(x, y) {
+                this.base = x;
+                this.altura = y;
+            }
+
+            calcularArea() {
+                return this.base * this.altura;
+            }
+        }
+
+        function calcularArea() {
+            const base = parseFloat(document.querySelector('.base').value);
+            const altura = parseFloat(document.querySelector('.altura').value);
+
+            if (isNaN(base) || isNaN(altura)) {
+                alert("Por favor, insira valores numéricos válidos.");
+                return;
+            }
+
+            const retangulo = new Retangulo(base, altura);
+
+            const res = document.querySelector('.resultado');
+            res.innerHTML = `A área do retângulo é: ${retangulo.calcularArea()}`;
+        }
+    </script>
+</body>
+</html>
