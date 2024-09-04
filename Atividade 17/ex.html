@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+           
+            <input type="text" id="content">
+            <div class="box">
+                <div>
+                    <label for="">Maisculo</label>
+                    <input type="checkbox" name="" id="maisc">
+                </div>
+                <div class="line"></div>
+               <div>
+                    <label for="">Minusculo</label>
+                    <input type="checkbox" name="" id="minusc">
+               </div>
+            </div>
+        </form>
+    </div>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #content {
+            padding: 8px;
+            border: none;
+            box-shadow: 1px 2px rgba(0, 0, 0, 0.13);
+            outline: none;
+            text-align: center;
+        }
+        .box {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .line {
+            width: 100px;
+            height: 1px;
+            background: black;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+
+</html>
