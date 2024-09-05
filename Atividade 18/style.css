@@ -70,10 +70,19 @@ form .input-info {
 }
 
 .btn > input {
+    transition: 0.6s;
     width: 80px;
     border: none;
     background: none;
     padding: 10px;
     color: white;
     box-shadow: 1px 1px white;
+}
+
+
+.btn > input:hover {
+    transition: 0.6s;
+    background: rgb(82, 82, 82);
+    color: black;
+    color: white;
 }
