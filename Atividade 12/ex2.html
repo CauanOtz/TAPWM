@@ -7,20 +7,16 @@
 </head>
 <body>
     <script>
+        
         function verificacao(p1,p2){
 
             p1 = prompt("Digite a primeira palavra");
             p2 = prompt("Digite a segunda palavra");
 
-            if(!p1 || !p2){
-                alert("erro");
-            }
+            !p1 || !p2 ? alert("erro") : null;
 
-            if(p1.includes(p2)){
-                alert("é um subconjunto");
-            }else {
-                alert("não é subconjunto")
-            }
+            p1.includes(p2) ? alert("é um subconjunto") : alert("não é subconjunto");
+            
         }
 
         verificacao();
